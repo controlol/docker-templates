@@ -1,0 +1,71 @@
+{
+   "cap_add" : null,
+   "cap_drop" : null,
+   "cmd" : "/bin/sh -c node\\ /deezloaderremix/app/app.js",
+   "cpu_priority" : 50,
+   "devices" : null,
+   "enable_publish_all_ports" : false,
+   "enable_restart_policy" : false,
+   "enabled" : false,
+   "env_variables" : [
+      {
+         "key" : "PATH",
+         "value" : "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      },
+      {
+         "key" : "NODE_VERSION",
+         "value" : "8.15.1"
+      },
+      {
+         "key" : "YARN_VERSION",
+         "value" : "1.12.3"
+      }
+   ],
+   "exporting" : false,
+   "id" : "f84e46413a734d44f471b669ee076101ae0955ac3bb48309a2ce3fee27ae5529",
+   "image" : "fury2k/deezloaderremix:latest",
+   "image_config" : {
+      "Cmd" : [ "/bin/sh", "-c", "node /deezloaderremix/app/app.js" ],
+      "Entrypoint" : null,
+      "Env" : [
+         "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+         "NODE_VERSION=8.15.1",
+         "YARN_VERSION=1.12.3"
+      ],
+      "Volumes" : null,
+      "WorkingDir" : ""
+   },
+   "is_ddsm" : false,
+   "is_package" : false,
+   "links" : [],
+   "memory_limit" : 0,
+   "name" : "deezloader-1730",
+   "network" : [
+      {
+         "driver" : "bridge",
+         "name" : "bridge"
+      }
+   ],
+   "network_mode" : "bridge",
+   "port_bindings" : [
+      {
+         "container_port" : 1730,
+         "host_port" : 1730,
+         "type" : "tcp"
+      }
+   ],
+   "privileged" : false,
+   "shortcut" : {
+      "enable_shortcut" : false
+   },
+   "ulimits" : null,
+   "use_host_network" : false,
+   "volume_bindings" : [
+      {
+         "host_volume_file" : "/fam muziek",
+         "mount_point" : "/downloads",
+         "type" : "rw"
+      }
+   ],
+   "volumes_from" : null
+}
